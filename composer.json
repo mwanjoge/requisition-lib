@@ -1,0 +1,43 @@
+{
+    "name": "nisimpo/requisition",
+    "description": "A requisition package",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "nzogo",
+            "email": "boss.sm11@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "illuminate/console": "^9.21|^10.0|^11.0",
+        "illuminate/filesystem": "^9.21|^10.0|^11.0",
+        "illuminate/support": "^9.21|^10.0|^11.0",
+        "illuminate/validation": "^9.21|^10.0|^11.0",
+        "spatie/laravel-permission": "^6.4",
+        "symfony/console": "^6.0|^7.0",
+        "moneyphp/money": "^4.5"
+    },
+    "require-dev": {
+    "orchestra/testbench": "^7.35|^8.15|^9.0",
+    "phpunit/phpunit": "^9.3|^10.4|^11.0"
+},
+    "autoload": {
+        "psr-4": {
+            "Nisimpo\\Requisition\\": "src/",
+            "Nisimpo\\Requisition\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.01-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Nisimpo\\Requisition\\RequisitionServiceProvider"
+            ]
+        }
+    }
+}
